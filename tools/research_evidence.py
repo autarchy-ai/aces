@@ -19,8 +19,8 @@ HISTORICAL_SOURCE_PROFILES = frozenset({"python-reference-source/v1", SOURCE_PRO
 RELEASE_MANAGED_VERSION_SOURCE = "implementations/python/packages/raes/_version.py"
 _RELEASE_VERSION_MARKER = "x-release-please-version"
 _RELEASE_VERSION_LINE = re.compile(
-    r'^(__version__ = ")[0-9]+\.[0-9]+\.[0-9]+(?:[-+][0-9A-Za-z.-]+)?("  # x-release-please-version)$',
-    re.MULTILINE,
+    r'^(__version__ = ")\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?(" {2}# x-release-please-version)$',
+    re.MULTILINE | re.ASCII,
 )
 _SOURCE_KEYS = {"profile", "base_revision", "checkout_state", "implementation_digest"}
 
