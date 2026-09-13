@@ -6,6 +6,8 @@ from pydantic import Field, field_validator, model_validator
 from raes_contracts.realization_structure import RealizationPresence
 from raes_contracts.software_versions import VersionDomain, version_membership
 
+from raes.runtime_vocabulary import GovernedVocabulary
+
 from ._base import SDLModel
 from ._identifiers import PortableIdentifier
 from .runtime_packages import RuntimePackage
@@ -71,8 +73,8 @@ class RuntimeSoftwareComponent(SDLModel):
     presence: RealizationPresence = RealizationPresence.REQUIRED
     version: str = ""
     version_constraint: VersionDomain | None = None
-    component_type: RuntimeSoftwareComponentType | str = RuntimeSoftwareComponentType.UNKNOWN
-    provenance: RuntimeSoftwareComponentProvenance | str = RuntimeSoftwareComponentProvenance.UNKNOWN
+    component_type: GovernedVocabulary[RuntimeSoftwareComponentType] = RuntimeSoftwareComponentType.UNKNOWN
+    provenance: GovernedVocabulary[RuntimeSoftwareComponentProvenance] = RuntimeSoftwareComponentProvenance.UNKNOWN
     ecosystem: str = ""
     purl: str = ""
     cpe: str = ""

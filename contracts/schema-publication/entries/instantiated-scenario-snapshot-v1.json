@@ -1,9 +1,9 @@
 {
-  "content_hash": "cd0d76a11a79bd910d85f79ddb6a167d5c058bc618157386e36ca3c58dded4c8",
+  "content_hash": "9e4af05fb7184b42a8f848f68a778c34e5abc3c1a0884c683d17991ae859d0e9",
   "contract_id": "instantiated-scenario-snapshot-v1",
   "last_change": {
-    "content_hash": "cd0d76a11a79bd910d85f79ddb6a167d5c058bc618157386e36ca3c58dded4c8",
-    "summary": "Added bounded named version predicates and software requirement refinements in embedded contracts for issue #1205. Restrict refinement purposes to their component, repository or trust identity owner."
+    "content_hash": "9e4af05fb7184b42a8f848f68a778c34e5abc3c1a0884c683d17991ae859d0e9",
+    "summary": "Added bounded named version predicates and software requirement refinements in embedded contracts for issue #1205. Restrict refinement purposes to their component, repository or trust identity owner. Preserve governed private runtime identities and finite operation vocabularies from issue #1206."
   },
   "schema_path": "contracts/schemas/sdl/instantiated-scenario-snapshot-v1.json",
   "stability": "draft"

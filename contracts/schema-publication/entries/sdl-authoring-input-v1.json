@@ -1,9 +1,9 @@
 {
-  "content_hash": "e97ad375641f1fea28a56029e6df17fbb7114cdec70c758be3b951c78dbd6c7b",
+  "content_hash": "966842eeb5a34db24fbf3836e638ea5076ab592c16c92ff464623c38f40aa7c9",
   "contract_id": "sdl-authoring-input-v1",
   "last_change": {
-    "content_hash": "e97ad375641f1fea28a56029e6df17fbb7114cdec70c758be3b951c78dbd6c7b",
-    "summary": "Added bounded named version predicates and software requirement refinements in embedded contracts for issue #1205. Restrict refinement purposes to their component, repository or trust identity owner."
+    "content_hash": "966842eeb5a34db24fbf3836e638ea5076ab592c16c92ff464623c38f40aa7c9",
+    "summary": "Added bounded named version predicates and software requirement refinements in embedded contracts for issue #1205. Restrict refinement purposes to their component, repository or trust identity owner. Preserve governed private runtime identities and finite operation vocabularies from issue #1206."
   },
   "schema_path": "contracts/schemas/sdl/sdl-authoring-input-v1.json",
   "stability": "draft"

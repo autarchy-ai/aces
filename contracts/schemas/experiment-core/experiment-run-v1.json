@@ -3379,7 +3379,7 @@
         "value": {
           "anyOf": [
             {
-              "type": "string"
+              "type": "boolean"
             },
             {
               "type": "integer"
@@ -3388,7 +3388,7 @@
               "type": "number"
             },
             {
-              "type": "boolean"
+              "type": "string"
             },
             {
               "type": "null"
